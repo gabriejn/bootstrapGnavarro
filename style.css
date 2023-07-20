@@ -1,6 +1,8 @@
 .one{
     border: 2px solid rgba(0, 179, 255, 0.441);
+    /*
     height: 100vh;
+    */
     background-image: linear-gradient( rgb(229, 229, 147), rgb(235, 124, 124));
 
 }
