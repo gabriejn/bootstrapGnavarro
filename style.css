@@ -1,0 +1,15 @@
+.one{
+    border: 2px solid rgba(0, 179, 255, 0.441);
+    height: 100vh;
+    background-image: linear-gradient( rgb(229, 229, 147), rgb(235, 124, 124));
+
+}
+.two{
+    border:2px solid  rgb(150, 189, 103);
+    background-image: linear-gradient(rgb(211, 132, 132), rgba(255, 255, 0, 0.334));
+}
+.three{
+    border:1px solid red;
+    background-image: linear-gradient( rgb(229, 229, 147), rgb(235, 124, 124));
+
+}
