@@ -6,51 +6,163 @@
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS goes here -->
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <!--your external CSS stylesheet goes here-->
-  
+    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' type='text/css'>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
   <title>Bootstrap Email Template</title>
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row w-100">
-      <div class="col-sm-12 col-md-6 col-lg-3 one">
-        Column One
-        <div class="row two">
-          <div class="col-sm-9">
-            Level 1: .col-sm-9
-            
-            <div class="row">
-                
-            </div>
+  <div class="container-fluid background">
+    <nav class="navbar navbar-dark toprow">
+      <!-- Navbar content -->
+      <div class="btn-group">
+        <button class="btn btn-secondary dropdown-toggle button_dropdown" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside true" aria-expanded="false">
+          Quick Links
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Inbox</a></li>
+          <li><a class="dropdown-item" href="#">Sent</a></li>
+          <li><a class="dropdown-item" href="#">Compose</a></li>
+        </ul>
+      </div>
+      <div class="hidden">
+      <button type="button" class="btn btn-outline-warning">Favorites</button>
+      </div>
+      <div class="logo">
+        
+Email's By Gabriel
+</div> 
+<div class="hidden">
+<button type="button" class="btn btn-outline-success">Compose</button>
+</div>
+<div class="hidden">
+<div class="btn-group">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside true" aria-expanded="false">
+    Settings
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Add Account</a></li>
+    <li><a class="dropdown-item" href="#">Logout</a></li>
+    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+  </ul>
+</div>
+
+</div>
+
+    </nav>
+ 
+  <div class="container-fluid pageview">
+    <div class="row ">
+      <div class="col-6 col-md-6 col-lg-3 one">
+       <b class="settinghead">Folders</b>
+        <div class="col-12">
+          <div class="row settings">
+
+            <button type="button" class="btn btn-outline-primary">Inbox <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <button type="button" class="btn btn-outline-success">Drafts</button>
+            <button type="button" class="btn btn-outline-primary">Sent</button>
+            <button type="button" class="btn btn-outline-secondary">Starred <span class="badge badge-pill badge-danger">✭</span></button>
           </div>
-        </div>
-        <div class="row two">
-          <div class="col-sm-9">
-            Level 1: .col-sm-9
-            
-            <div class="row">
-                
-            </div>
-          </div>
-        </div>
-        <div class="row two">
-          <div class="col-sm-9">
-            Level 1: .col-sm-9
-            
-            <div class="row">
-                
-            </div>
-          </div>
+        </div>           
+
+            <b class="settinghead">Accounts</b>
+    
+            <div class="col-12 ">
+              <div class="row settings">
+                <button type="button" class="btn btn-outline-primary">gabriel@navarromail.com <span class="badge badge-pill badge-primary badge">Primary</span></button>
+                <button type="button" class="btn btn-outline-success">gnav@236cohort.com</button>
+                <button type="button" class="btn btn-outline-primary">trollaccount@gmail.com</button>
+                <button type="button" class="btn btn-outline-secondary">jackndaboxfan@gmail.com</button>
+              </div>
+            </div>            </div>
+
+      <div class="col-6 col-md-6 col-lg-3 two convos">
+       <b>Conversations</b>
+       
+       <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control" placeholder="Search Conversations" aria-label="Search Conversations" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button"><div class="fa fa-search"></div> <!-- smaller -->
+          </button>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 two">
-        Column Two
+       <div class="list-group center email_list">
+        <a href="#" class="list-group-item list-group-item-action active">
+          Where's My Car!<br>
+          -Mom
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <b>Coupons Coupons Coupons</b><br>
+          -Applebees
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <b>You're Late... </b><br>
+          -Work
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <b>Reservation Confimation</b><br>
+          -Hilton
+        </a>
+          <div class=".d-sm-none .d-md-block">
+        <a href="#" class="list-group-item list-group-item-action disabled">
+          <b>Free Money</b><br>
+          -Spam Likely
+        </a>
+          <a href="#" class="list-group-item list-group-item-action disabled">
+            <b>Bing Daily</b><br>
+            -Microsoft Bing
+            
+          </a>
+          <a href="#" class="list-group-item list-group-item-action disabled">
+            <b>New Discoveries Made</b><br>
+            -Science Daily
+          </a>
+          </div>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-6 three">
-        Column Three
+      </div>
+      <div class="col-12 col-md-12 col-lg-6 three">
+        <div class="email">
+        <div class="logo">
+        Email's by  Gabriel <br>
+        
+        </div>
+        <div class="emptyspace"></div>
+
+
+        <b>Subject: Where's My Car! </b> 
+        
+        <div class="addresses">
+        From:Mom (mail@mom.com)<br>
+        To:Gabriel (gabriel@navarromail.com)<br> 
+      </div>       
+        <div class="textbody">
+        Gabriel Where is my car, it's been<br> three days and I need it.<br>
+        See you soon, <br>
+        Mom =3 
+        </div></div>
+
+
+        <div class="email_box">
+          <div class="form-group">
+            <form>
+            <label class="quickreply" for="exampleFormControlTextarea1 center"><b>Quick Reply:</b></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <input class="btn btn-primary" type="submit" value="Send">
+
+          </div>
+        </form>
+        </div>
+
+        </div>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
 </body>
+
 </html>

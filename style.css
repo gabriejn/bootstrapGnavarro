@@ -1,17 +1,136 @@
 .one{
-    border: 2px solid rgba(0, 179, 255, 0.441);
     /*
     height: 100vh;
     */
-    background-image: linear-gradient( rgb(229, 229, 147), rgb(235, 124, 124));
+    background-image: linear-gradient( #f4d35e, #ee964b);
+    display: flex;
+    flex-direction: column;
+align-items: center;
 
+}
+.settings{
+    display: flex;
+    justify-content: space-around;
+    row-gap: 10px;
 }
 .two{
-    border:2px solid  rgb(150, 189, 103);
-    background-image: linear-gradient(rgb(211, 132, 132), rgba(255, 255, 0, 0.334));
+    background-image: linear-gradient(#ee964b, #f4d35e);
 }
 .three{
-    border:1px solid red;
-    background-image: linear-gradient( rgb(229, 229, 147), rgb(235, 124, 124));
+    background-image: linear-gradient( #f4d35e, #ee964b);
+}
+.background{
+    background-image: linear-gradient( #0d3b66, #c19ab7);
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
 
 }
+.navbar {
+    background-color: #0d3b66;
+    display: flex;
+    text-align: center;
+}
+@media screen and (max-width: 660px){
+    .hidden{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+    .navbar{
+        flex-direction: column-reverse;
+    }
+    .convos{
+        height: 50vh;
+        overflow: scroll;
+    }
+    .background{
+        height: 100vh;
+    }
+    .btn{
+        font-size: 10px; 
+        flex-shrink: 2;
+    }
+
+    .email{
+        height: 20vh;
+    }
+
+}
+@media screen and (min-width: 660px){
+    .one{
+        height: 75vh;
+    }
+}
+
+
+.email_box{
+    height: 20vh;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.convos{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.email_list{
+    text-align: left;
+}
+.email{
+    display: flex;
+    background-color: #faf0ca;
+    flex-direction: column;
+    height: 35vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.addresses{
+    display: flex;
+    font-size: small;
+    font-family: monospace;
+    font-style: italic;
+}
+.textbody{
+    display: flex;
+    text-align: left;
+    background-color: #ffffff;
+    align-self: center;
+    width: 75%;
+    font-size: large;
+    font-family: cursive;
+}
+
+.logo{
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    align-self: center;
+    color: #c19ab7;
+}
+.emptyspace{
+
+    border-bottom: 4px solid #ee964b;
+}
+.badge{
+    background-color: #0d3b66;
+    font-style:oblique;
+
+}
+.badge-danger{
+    background-color: #ee974b;
+    font-family: monospace;
+}
+.quickreply{
+    font-size: small;
+}
+.settinghead{
+    font-size: small;
+}
+
